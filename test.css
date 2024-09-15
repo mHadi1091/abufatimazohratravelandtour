@@ -1,0 +1,376 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e2d24; /* Dark olive green background */
+    color: #e1c699; /* Gold for text color */
+    line-height: 1.6;
+}
+
+/* Logo and Company Name */
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#company-logo {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+#company-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e1c699; /* Gold */
+    font-family: 'Georgia', serif;
+}
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e2d24; /* Dark olive green background */
+    color: #e1c699; /* Gold text color */
+}
+
+#navigation-bar {
+    background-color: #1b2a23; /* Dark olive green */
+    color: #e1c699; /* Gold text */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Logo Section */
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#company-logo {
+    height: 50px;
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+#company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e1c699; /* Gold */
+}
+
+/* Navigation Buttons */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navi-buttons {
+    color: #e1c699; /* Gold */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navi-buttons:hover {
+    color: #f7dd72; /* Lighter gold on hover */
+}
+
+/* Search Bar */
+#search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#placeholder_search {
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #e1c699; /* Gold border */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text inside input */
+}
+
+#search-button {
+    padding: 7px 12px;
+    background-color: #b9935a; /* Olive-gold button */
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    background-color: #e1c699; /* Gold on hover */
+}
+
+/* Main Content Sections */
+.content-section {
+    padding: 100px 20px;
+    background-color: #f9f9f9; /* Light background for content */
+    color: #333; /* Dark text color */
+}
+
+h1, h2 {
+    color: #b9935a; /* Olive-gold for headings */
+}
+
+/* Adjust margins */
+#about-us, #contact-us, #faqs {
+    margin-top: 60px;
+}
+
+#faqs {
+    margin-bottom: 100px;
+}
+
+/*
+#navigation-bar {
+    background-color: #111; /* Black */
+/*    color: #e1c699; /* Gold text */
+/*    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the navbar at the top */
+/*    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is always on top */
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+/*}
+
+.navi-buttons {
+    color: #e1c699; /* Gold for nav links */
+/*    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navi-buttons:hover {
+    color: #f7dd72; /* Lighter gold on hover */
+/*}
+*/
+#placeholder_search {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #e1c699; /* Gold border */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text inside input */
+}
+
+#search-button {
+    padding: 6px 10px;
+    background-color: #b9935a; /* Olive-gold */
+    color: black; /* Black text */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #e1c699; /* Gold on hover */
+}
+
+/* Poster Image Section */
+#poster_div {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Set the height to a reasonable size */
+    margin-top: 60px; /* Add space to avoid overlap with fixed navbar */
+}
+
+#poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-out;
+}
+
+/* Package Section */
+.package-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.package-box {
+    border: 2px solid #b9935a; /* Olive-gold border */
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    border-radius: 8px;
+    background-color: #1b2a23; /* Darker olive green background */
+    color: #e1c699; /* Gold text */
+    margin-bottom: 20px; /* Add spacing between package boxes */
+}
+
+.package-box h2 {
+    margin-top: 0;
+    color: #f7dd72; /* Lighter gold for headings */
+}
+
+.package-box p {
+    color: #e1c699; /* Gold for text */
+}
+
+.package-box .price {
+    font-size: 24px;
+    color: #f7dd72; /* Lighter gold for price */
+    font-weight: bold;
+}
+
+.package-box button {
+    padding: 10px 20px;
+    background-color: #b9935a; /* Olive-gold for button */
+    color: black; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.package-box button:hover {
+    background-color: #e1c699; /* Gold on hover */
+}
+
+/* FAQ Section */
+.faq-container {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #c79842; /* Goldish color */
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+.faq-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes FAQ buttons responsive */
+}
+
+.faq-btn {
+    background-color: #000; /* Black buttons */
+    color: #e1c699; /* Gold text */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-btn:hover {
+    background-color: #444; /* Darker grey on hover */
+}
+
+.faq-btn::after {
+    content: ' \27A1'; /* Unicode for arrow */
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+/* FAQ Section Content */
+.faq-section {
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the FAQ content */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333; /* Dark text */
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    color: #c79842; /* Goldish color for FAQ headings */
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    font-size: 1rem;
+    color: #555; /* Greyish text */
+    line-height: 1.6;
+}
+
+/* Floating Contact Button */
+.contact-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #c79842; /* Goldish button */
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.contact-button a {
+    color: #fff;
+    padding: 15px 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button a:hover {
+    background-color: #b38333; /* Darker gold on hover */
+}
+
+/* Scrollbar Styling */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b9935a; /* Olive-gold scrollbar */
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #e1c699; /* Gold scrollbar on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-buttons {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .package-box {
+        width: 90%;
+    }
+}
