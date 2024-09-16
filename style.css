@@ -31,15 +31,8 @@ body {
     color: #e1c699; /* Gold */
     font-family: 'Georgia', serif;
 }
-/* Basic Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e2d24; /* Dark olive green background */
-    color: #e1c699; /* Gold text color */
-}
 
+/* Navigation Bar */
 #navigation-bar {
     background-color: #1b2a23; /* Dark olive green */
     color: #e1c699; /* Gold text */
@@ -51,23 +44,24 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    /* z-index: 1000; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
-/* the navigation bar color */
+
 #navigation-bar div {
-    background-color:#1b2a23;;
+    background-color:#1b2a23;
 }
 
 /* Logo Section */
 #logo-container {
     display: flex;
     align-items: center;
+    border-radius: 5px;
+    border-color:#e1c699;
 }
 
 #company-logo {
     height: 50px;
-    margin-right: 10px; /* Space between logo and company name */
+    margin-right: 10px;
 }
 
 #company-name {
@@ -129,52 +123,9 @@ nav {
     color: #333; /* Dark text color */
 }
 
-h1, h2 {
-    color: #b9935a; /* Olive-gold for headings */
-}
-
-/* Adjust margins */
-#about-us, #contact-us, #faqs {
-    margin-top: 60px;
-}
-#faqs {
-    margin-bottom: 100px;
-}
-#placeholder_search {
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid #e1c699; /* Gold border */
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text inside input */
-}
-
-#search-button {
-    padding: 6px 10px;
-    background-color: #b9935a; /* Olive-gold */
-    color: black; /* Black text */
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#search-button:hover {
-    background-color: #e1c699; /* Gold on hover */
-}
-
-/* Poster Image Section */
-#poster_div {
-    /* position: relative; */
-    overflow: hidden;
-    height: 0; /* Set the height to a reasonable size */
-    /* margin-top: 60px; Add space to avoid overlap with fixed navbar */
-    border-radius: 5px;
-}
-
-#poster {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-out;
+#home {
+    text-align: center;
+    justify-content: center;
 }
 
 /* Package Section */
@@ -225,19 +176,48 @@ h1, h2 {
     background-color: #e1c699; /* Gold on hover */
 }
 
+/* Routes Section */
+.table-container {
+    width: 90%;
+    margin: 40px auto;
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e1c699; /* Gold border */
+}
+
+.routes-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #1e2d24; /* Dark olive background */
+    color: #e1c699; /* Gold text */
+    font-size: 1.1rem;
+}
+
+.routes-table th, .routes-table td {
+    padding: 15px;
+    border: 1px solid #b9935a; /* Olive-gold border */
+    transition: background-color 0.3s ease;
+}
+
+.routes-table th {
+    background-color: #f7dd72; /* Lighter gold for table headers */
+    color: #1e2d24; /* Dark text for contrast */
+}
+
+.routes-table td {
+    background-color: #1b2a23; /* Dark olive row background */
+}
+
+.routes-table tr:hover td {
+    background-color: #333; /* Darker row on hover */
+}
+
 /* FAQ Section */
 .faq-container {
     text-align: center;
     margin: 100px auto;
     max-width: 800px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #c79842; /* Goldish color */
-    text-align: center;
-    font-family: serif;
-    margin-bottom: 20px;
 }
 
 .faq-buttons {
@@ -259,36 +239,6 @@ h1 {
 
 .faq-btn:hover {
     background-color: #444; /* Darker grey on hover */
-}
-
-.faq-btn::after {
-    content: ' \27A1'; /* Unicode for arrow */
-    font-size: 1.1rem;
-    margin-left: 8px;
-}
-
-/* FAQ Section Content */
-.faq-section {
-    width: 80%;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff; /* White background for the FAQ content */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    color: #333; /* Dark text */
-}
-
-.faq-section h2 {
-    font-size: 2rem;
-    color: #c79842; /* Goldish color for FAQ headings */
-    margin-bottom: 10px;
-}
-
-.faq-section p {
-    font-size: 1rem;
-    color: #555; /* Greyish text */
-    line-height: 1.6;
 }
 
 /* Floating Contact Button */
@@ -316,56 +266,6 @@ h1 {
     background-color: #b38333; /* Darker gold on hover */
 }
 
-/* Scrollbar Styling */
-body::-webkit-scrollbar {
-    width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #b9935a; /* Olive-gold scrollbar */
-    border-radius: 5px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #e1c699; /* Gold scrollbar on hover */
-}
-/* about us section */
-.about-us-section{
- text-align: center;
-}
-#about-us{
- text-align: center;
- justify-content: center;
-
-}
-.divider{
-    color: #b38333;
-    animation-duration: 2ms;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .package-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .faq-buttons {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .package-box {
-        width: 90%;
-    }
-}
 /* Footer Section */
 #footer {
     background-color: #1b2a23; /* Dark olive green */
@@ -407,7 +307,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     gap: 15px;
 }
-/* Social Media Icons */
+
 .social-icon {
     color: #e1c699; /* Gold */
     font-size: 30px; /* Adjust size as needed */
@@ -430,25 +330,5 @@ body::-webkit-scrollbar-thumb:hover {
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-
-/* Responsive Design for Footer */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-social {
-        flex-direction: column;
-        gap: 10px;
-    }
+    color: #e1c699; /* Gold */
 }
