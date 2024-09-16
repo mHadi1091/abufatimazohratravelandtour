@@ -132,37 +132,9 @@ h1, h2 {
 #about-us, #contact-us, #faqs {
     margin-top: 60px;
 }
-
 #faqs {
     margin-bottom: 100px;
 }
-
-/*
-#navigation-bar {
-    background-color: #111; /* Black */
-/*    color: #e1c699; /* Gold text */
-/*    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; /* Fix the navbar at the top */
-/*    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure the navbar is always on top */
-/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-/*}
-
-.navi-buttons {
-    color: #e1c699; /* Gold for nav links */
-/*    margin-right: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navi-buttons:hover {
-    color: #f7dd72; /* Lighter gold on hover */
-/*}
-*/
 #placeholder_search {
     padding: 5px;
     border-radius: 5px;
@@ -188,8 +160,9 @@ h1, h2 {
 #poster_div {
     position: relative;
     overflow: hidden;
-    height: 400px; /* Set the height to a reasonable size */
+    height: 0; /* Set the height to a reasonable size */
     margin-top: 60px; /* Add space to avoid overlap with fixed navbar */
+    border-radius: 5px;
 }
 
 #poster {
