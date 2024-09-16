@@ -43,6 +43,7 @@ body {
 #navigation-bar {
     background-color: #1b2a23; /* Dark olive green */
     color: #e1c699; /* Gold text */
+    opacity: 0.9;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -50,8 +51,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+/* the navigation bar color */
+#navigation-bar div {
+    background-color:#1b2a23;;
 }
 
 /* Logo Section */
@@ -158,10 +163,10 @@ h1, h2 {
 
 /* Poster Image Section */
 #poster_div {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     height: 0; /* Set the height to a reasonable size */
-    margin-top: 60px; /* Add space to avoid overlap with fixed navbar */
+    /* margin-top: 60px; Add space to avoid overlap with fixed navbar */
     border-radius: 5px;
 }
 
@@ -230,6 +235,7 @@ h1, h2 {
 h1 {
     font-size: 2.5rem;
     color: #c79842; /* Goldish color */
+    text-align: center;
     font-family: serif;
     margin-bottom: 20px;
 }
@@ -322,6 +328,19 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     background: #e1c699; /* Gold scrollbar on hover */
+}
+/* about us section */
+.about-us-section{
+ text-align: center;
+}
+#about-us{
+ text-align: center;
+ justify-content: center;
+
+}
+.divider{
+    color: #b38333;
+    animation-duration: 2ms;
 }
 
 /* Responsive Design */
