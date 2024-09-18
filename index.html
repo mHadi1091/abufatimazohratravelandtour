@@ -31,7 +31,7 @@
         <img id="poster" src="images/Untitled design (1).svg" alt="Kaaba Image">
     </div>
     <section id="home" class="content-section">
-        <h1 id="home">WELCOME TO ABU FATIMA ZOHRA TRAVEL AND TOURS</h1>
+        <h1 id="home-head">WELCOME TO ABU FATIMA ZOHRA TRAVEL AND TOURS</h1>
         <h2 id="home">Specialists in Hajj, umarah tours</h2>
         <p class="arabic-text">
             عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ أَنَّ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ لَا تُشَدُّ الرِّحَالُ إِلَّا إِلَى ثَلَاثَةِ 
@@ -54,14 +54,14 @@
             can focus on what matters most. Our dedicated team is here to help, whether it's a pilgrimage to Hajj or umarah.
         </p>
     </section>
-    <section id="contact-us" class="content-section">
+    <!-- <section id="contact-us" class="content-section">
         <h2>Contact Us</h2>
         <p>Feel free to reach out for any inquiries.</p>
-    </section>
-    <section id="faqs" class="content-section">
+    </section> -->
+    <!-- <section id="faqs" class="content-section">
         <h2>Frequently Asked Questions (FAQs)</h2>
         <p>Answers to common questions about our services.</p>
-    </section>
+    </section> -->
     <section id ="packages" class ="contact-section">
     <div class="package-container">
        <div class="package-box">
@@ -79,7 +79,7 @@
     </div>
     </section>
  <section id="routes" class="content-section">
-        <h2>Routes</h2>
+        <h2 id="routes-heading">Routes</h2>
         <table class="routes-table">
             <thead>
                 <tr>
@@ -133,6 +133,88 @@
             </tbody>
         </table>
     </section>
+     <!-- booking section -->
+    <section class="booking-section">
+        <div class="form-container">
+            <h1>Find Your Best Umrah Package</h1>
+            <p>Find the world's largest collection of Hajj & Umrah Packages</p>
+            <form>
+                <div class="elem-group">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="elem-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="Email Id">
+                </div>
+                <div class="elem-group">
+                    <label for="contact">Contact</label>
+                    <input type="tel" placeholder="Contact No.">
+                </div>
+                <br>
+              <div class="elem-group">
+                <label for="departure-airport">Departure</label>
+                <input type="text" placeholder="Departure Airport">
+            </div>
+            <div class="elem-group">
+                <label for="arrival">Arrival</label>
+                <input type="text" placeholder="Arrival Airport">
+            </div>
+            <div class="elem-group">
+                <label for="makkah-nights">Makkah Nights</label>
+                <input type="text" placeholder="Makkah Nights">
+            </div>
+            <div class="elem-group">
+                <label for="madinah-nights">Madinah Nights</label>
+                <input type="text" placeholder="Madinah Nights">
+            </div>
+            <div class="elem-group">
+                <label for="travel-date">Travel Date</label>
+                <input type="date" placeholder="Travel Date">
+            </div>
+            <div class="elem-group">
+                <label for="room-selection">Room Preference</label>
+                <select id="room-selection" name="room_preference" required>
+                    <option value="">Choose a Room from the List</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <label for="checkin-date">Check-in Date</label>
+                <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+
+            <div class="elem-group">
+                <label for="checkout-date">Check-out Date</label>
+                <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <!-- <div class="elem-group">
+                <input type="date" placeholder="Travel Date">
+            </div> -->
+            <!-- <div class="elem-group">
+                <input type="text" placeholder="Accommodation">
+            </div> -->
+            <div class="elem-group">
+                <label for="adult">Adults</label>
+                <input type="number" placeholder="Adult 12+">
+            </div>
+            <div class="elem-group">
+                <label for="child">Children</label>
+                <input type="number" placeholder="Child">
+            </div>
+            <div class="elem-group">
+                <label for="infant">Infant</label>
+                <input type="number" placeholder="Infant below 2">
+            </div>
+            <div class="elem-group">
+                <button type="submit">Book Now</button>
+            </div>
+            </form>
+        </div>
+ </section>
+    <section id="faqs" class="content-section">
     <div class="faq-container">
      <h1>Frequently Asked Questions</h1>
         <div class="faq-buttons">
@@ -156,11 +238,11 @@
         <h2>Packages FAQs</h2>
         <p>Here you can add detailed questions and answers about Packages.</p>
     </div>
+ </section>
     <!-- Contact Us Section -->
     <div class="about-us-section">
-     <section id="contact-us" class="content-section"></section>
+     <section id="contact-us" class="content-section">
       <!-- <div class="about-us-section"> -->
-        <hr class="divider">
             <!-- Call to Action -->
         <h2>Contact Us</h2>
          <p>Feel free to reach out for any inquiries.</p>         
@@ -172,6 +254,7 @@
      </section>
     </div>
  </body> 
+ <hr class="divider">
    <!--footer-->
 <footer id="footer">
     <div class="footer-content">
